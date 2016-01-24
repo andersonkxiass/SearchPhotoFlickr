@@ -3,10 +3,17 @@ This is a simple Android project to search for images on Flickr API.
 
 #How to buid
 
+1. You needs of the Android Environment (Android SDK, Android Studio and JAVA JDK).
+2. You needs create an account on https://www.flickr.com/ and request an API KEY and change the api_key on `FlickrPhotoService.class`.
 
-1 - You needs of the Android Environment (Android SDK, Android Studio and JAVA JDK)
-
-2 - You needs create an account on https://www.flickr.com/ and request an API KEY
+```Java
+ //Add required parameters and helpers params
+  HttpUrl url = original.httpUrl().newBuilder()
+    .addQueryParameter("api_key","0718eccf777b77009392bfc9b0f06bf1")
+    .addQueryParameter("format","json")
+    .addQueryParameter("nojsoncallback","1")//disable the JSONP callback stuff flickr seems to assume we want
+    .build();
+```
 
 #Third-party Libraries
 

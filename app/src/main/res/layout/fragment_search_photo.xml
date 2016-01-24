@@ -1,0 +1,18 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	tools:context=".view.fragments.SearchPhotoActivityFragment"
+	tools:showIn="@layout/activity_search_photo"
+	android:background="#e1e1e2">
+
+	<com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/my_recycler_view"
+		app:recyclerviewEmptyView="@layout/empty_view"
+		app:recyclerviewScrollbars="vertical"/>
+
+</RelativeLayout>
